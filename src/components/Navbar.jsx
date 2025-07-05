@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full bg-white py-[18px] sticky top-0 z-50">
+    <div className="w-full bg-white py-[10px] md:py-[18px] sticky top-0 z-50">
       <div className="max-w-[1440px] mx-auto flex justify-between items-center px-6 md:px-12 xl:px-[135px]">
         <img
           src={assets.CleaningLogo}
