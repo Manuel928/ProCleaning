@@ -44,8 +44,8 @@ const Button = ({
   const textClass = textColor[buttonTextColor] || textColor.white;
   const sizeClass = sizeClasses[size] || sizeClasses.md;
   const borderClass = borderColor[border] || borderColor.darkGreen;
-  const hoverClass = hoverColor[hover] || hoverColor.green;
-  const fontClass = fontWeight[font] || fontWeight.semiBold
+  const hoverClass = hoverColor[hover]
+  const fontClass = fontWeight[font]
 
   return (
     <a

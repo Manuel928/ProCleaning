@@ -3,9 +3,9 @@ import { ArrowUpRightIcon } from "lucide-react";
 
 const ServicesCard = ({ service }) => {
   return (
-    <div className="flex flex-col gap-4 items-start justify-center">
+    <div className="flex flex-col hover:-translate-y-0.5 duration-300 transition-all h-full gap-4 items-start justify-center">
       <div>
-        <img src={service.image} alt="" srcset="" />
+        <img src={service.image} alt="" className="" srcset="" />
       </div>
       <div className="pb-2">
         <h4 className="font-semibold text-[16px]">{service.title}</h4>

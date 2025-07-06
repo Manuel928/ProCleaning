@@ -10,7 +10,7 @@ const Hero = () => {
         backgroundSize: "1440px 585px",
       }}
     >
-      <div className="flex flex-col gap-5 justify-center py-[70px] md:py-[104px] items-start max-w-[610px]">
+      <div className="flex flex-col gap-5 justify-center py-[70px] md:py-[144px] items-start max-w-[610px]">
         <div className="flex flex-col">
           <p className="text-[14px] md:text-[16px] text-[#111D15]">
             Quality cleaning at a fair price
