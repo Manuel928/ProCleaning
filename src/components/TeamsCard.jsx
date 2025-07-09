@@ -3,14 +3,14 @@ import { assets } from "../assets/assets";
 
 const TeamsCard = ({ member }) => {
   return (
-    <div className="flex flex-col rounded-[20px] hover:border hover:border-[#83A790] duration-300 transition items-start justify-center">
+    <div className="flex flex-col rounded-[20px] h-full w-full hover:border hover:border-[#83A790] shadow cursor-pointer duration-500 transition items-start justify-center">
       <div>
         <img src={member.image} alt="" srcset="" />
       </div>
       <div className="pt-[24px] pb-[20px]">
-        <div className="flex flex-col px-3 gap-3 pb-2">
+        <div className="flex flex-col px-5 gap-2 pb-2">
           <h4 className="font-semibold text-[16px]">{member.name}</h4>
-          <div className="flex gap-[2.67px] flex-row">
+          <div className="flex gap-[2.67px] pb-[4px] flex-row">
             {Array.from({ length: member.rating }, (_, i) => (
               <StarIcon fill="#FF9800" stroke="#FF9800" className="w-4 h-4" />
             ))}

@@ -7,10 +7,10 @@ const Hero = () => {
       style={{
         backgroundImage: 'url("HeroImage.png")',
         backgroundRepeat: "no-repeat",
-        backgroundSize: "1440px 585px",
+        backgroundSize: "cover",
       }}
     >
-      <div className="flex flex-col gap-5 justify-center py-[70px] md:py-[144px] items-start max-w-[610px]">
+      <div className="flex flex-col gap-5 justify-center py-[70px] md:py-[104px] items-start max-w-[610px]">
         <div className="flex flex-col">
           <p className="text-[14px] md:text-[16px] text-[#111D15]">
             Quality cleaning at a fair price
@@ -27,7 +27,12 @@ const Hero = () => {
           <Button bg="green" border="green" buttonTextColor="white" size="md">
             Get started now
           </Button>
-          <Button bg="outline" border="darkGreen" buttonTextColor="darkGreen" size="md">
+          <Button
+            bg="outline"
+            border="darkGreen"
+            buttonTextColor="darkGreen"
+            size="md"
+          >
             View all services
           </Button>
         </div>
@@ -35,4 +40,5 @@ const Hero = () => {
     </div>
   );
 };
+
 export default Hero;

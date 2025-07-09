@@ -11,7 +11,7 @@ const Footer = () => {
             src={assets.FooterLogo}
             alt="logo"
           />
-          <p className="mt-6 text-sm font-light">
+          <p className="mt-6 max-w-[326px] text-sm font-light">
             Stay updated with our latest cleaning tips, service updates, and
             helpful articles on maintaining a spotless home.
           </p>
@@ -50,12 +50,12 @@ const Footer = () => {
             <div className="text-sm space-y-2">
               <div className="flex flex-col items-start gap-2 pt-4">
                 <input
-                  className="border border-gray-500/30 placeholder-gray-500 focus:ring-2 ring-[#36B864] outline-none w-full max-w-64 h-9 rounded px-2"
+                  className="border border-gray-500/30 placeholder:text-[#9E9E9E] placeholder:text-sm focus:ring-2 ring-[#36B864] outline-none w-[291px] h-[41px] rounded px-2"
                   type="email"
                   placeholder="Enter your email"
                 />
-                <button className="bg-[#36B864] cursor-pointer w-24 h-9 text-white rounded">
-                  Send
+                <button className="bg-[#36B864] text-[14px] md:flex cursor-pointer text-white px-6 py-2 rounded-[6px]">
+                  Subscribe
                 </button>
               </div>
             </div>

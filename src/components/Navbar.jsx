@@ -46,7 +46,7 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-transparent backdrop-blur-3xl z-50 flex flex-col items-center justify-center space-y-6 px-8">
+        <div className="fixed inset-0 bg-transparent backdrop-blur-3xl z-500 flex flex-col items-center justify-center space-y-6 px-8">
           <XIcon
             onClick={() => setIsOpen(false)}
             className="absolute top-6 right-6 w-6 h-6 text-black cursor-pointer"
@@ -63,7 +63,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => setIsOpen(false)}>
+              <a href="#service" onClick={() => setIsOpen(false)}>
                 Service
               </a>
             </li>

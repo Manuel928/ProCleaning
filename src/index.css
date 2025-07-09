@@ -7,3 +7,10 @@
   /* overflow-x: hidden; */
   scrollbar-width: thin;
 }
+
+@theme {
+  --color-lightGray: #F4F5F8;
+  --color-green: #36B864;
+  --color-darkGreen: #111D15;
+  --color-darkGray: #666666;
+}
