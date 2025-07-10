@@ -22,16 +22,16 @@ const Navbar = () => {
               <a href="/">Home</a>
             </li>
             <li className="cursor-pointer hover:text-[#36B864]">
-              <a href="#">About us</a>
+              <a href="#cta">About us</a>
             </li>
             <li className="cursor-pointer hover:text-[#36B864]">
               <a href="#service">Service</a>
             </li>
             <li className="cursor-pointer hover:text-[#36B864]">
-              <a href="#">Blog</a>
+              <a href="#blog">Blog</a>
             </li>
             <li className="cursor-pointer hover:text-[#36B864]">
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -58,7 +58,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => setIsOpen(false)}>
+              <a href="#cta" onClick={() => setIsOpen(false)}>
                 About us
               </a>
             </li>
@@ -68,12 +68,12 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => setIsOpen(false)}>
+              <a href="#blog" onClick={() => setIsOpen(false)}>
                 Blog
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => setIsOpen(false)}>
+              <a href="#contact" onClick={() => setIsOpen(false)}>
                 Contact
               </a>
             </li>

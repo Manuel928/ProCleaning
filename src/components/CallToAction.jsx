@@ -5,8 +5,8 @@ import BulletPoints from "./BulletPoints";
 
 const CallToAction = () => {
   return (
-    <div className="pt-[60px] pb-[60px] md:pt-[110px] flex flex-col items-center gap-2.5 md:gap-5 mx-auto px-6 md:px-12 xl:px-[135px]">
-      <div className="pt-[25px] md:pt-[75px] flex flex-col items-center lg:flex-row gap-[70px] lg:gap-[201px] overflow-visible">
+    <div id="cta" className="pt-[60px] pb-[60px] md:pt-[110px] flex flex-col items-center gap-2.5 md:gap-5 mx-auto px-6 md:px-12 xl:px-[135px]">
+      <div className="pt-[25px] md:pt-[75px] flex flex-col items-center lg:flex-row gap-[70px] lg:gap-[110px] overflow-visible">
         {/* Image Container */}
         <div className="relative max-w-[535px] overflow-visible">
           <div className="relative w-[378px] h-[379px] overflow-visible">

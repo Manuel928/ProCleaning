@@ -7,6 +7,7 @@ import Image4 from "../assets/Image4.webp";
 import Image5 from "../assets/Image5.webp";
 import Image6 from "../assets/Image6.webp";
 import Image7 from "../assets/Image7.webp";
+import Image9 from "../assets/Image9.webp";
 import Team1 from "../assets/Team1.webp";
 import Team2 from "../assets/Team2.webp";
 import Team3 from "../assets/Team3.webp";
@@ -17,6 +18,7 @@ import X from "../assets/X.svg";
 import Facebook from "../assets/Facebook.svg";
 import Instagram from "../assets/Instagram.svg";
 import Linkedin from "../assets/Linkedin.svg";
+import Quotation from "../assets/Quotation.svg";
 
 export const assets = {
   CleaningLogo,
@@ -28,12 +30,14 @@ export const assets = {
   Image5,
   Image6,
   Image7,
+  Image9,
   Team1,
   Team2,
   Team3,
   Blog1,
   Blog2,
   Blog3,
+  Quotation,
   X,
   Facebook,
   Instagram,
@@ -44,6 +48,18 @@ export const services = [
   {
     image: Image1,
     title: "Office Cleaning",
+    description:
+      "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:",
+  },
+  {
+    image: Image1,
+    title: "Church Cleaning",
+    description:
+      "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:",
+  },
+  {
+    image: Image3,
+    title: "Yard Cleaning",
     description:
       "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:",
   },
@@ -99,7 +115,7 @@ export const bulletPoints = [
     title: "Best Quality",
   },
   {
-    title: "Standard cleaning tasks",
+    title: "Standard cleaning",
   },
   {
     title: "Affordable Prices",
@@ -212,5 +228,48 @@ export const blogPosts = [
     title: "The Benefits of Regular Professional Cleaning",
     description:
       "Understand the numerous advantages of scheduling regular professional cleanings. From improving indoor air...",
+  },
+];
+
+export const testimonials = [
+  {
+    image: Image9,
+    name: "Robert Fox",
+    role: "Business Man",
+    ratings: 5,
+    testimonialText:
+      "Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service.",
+  },
+  {
+    image: Image9,
+    name: "Sophia Martinez",
+    role: "Interior Designer",
+    ratings: 5,
+    testimonialText:
+      "I’ve worked with many cleaning services, but this one is by far the most professional. They paid attention to every detail and respected my space. Amazing experience!",
+  },
+  {
+    image: Image9,
+    name: "Daniel Okoro",
+    role: "Software Developer",
+    ratings: 4,
+    testimonialText:
+      "Great value for money! The team arrived on time and did a thorough job. I’m definitely booking them again next month.",
+  },
+  {
+    image: Image9,
+    name: "Amina Yusuf",
+    role: "HR Consultant",
+    ratings: 5,
+    testimonialText:
+      "Very friendly staff and spotless results. My apartment has never looked better. I especially loved how they handled delicate items with care.",
+  },
+  {
+    image: Image9,
+    name: "James Carter",
+    role: "Marketing Executive",
+    ratings: 5,
+    testimonialText:
+      "Truly professional service from start to finish. They transformed my messy office into a neat, welcoming space in no time.",
   },
 ];

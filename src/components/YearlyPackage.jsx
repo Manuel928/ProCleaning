@@ -3,7 +3,7 @@ import PackageCard from "./PackageCard";
 
 const YearlyPackage = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-[30px] mx-auto px-6 md:px-12">
+    <div className="flex flex-col lg:flex-row gap-[30px] gap-y-[36px] mx-auto px-6 md:px-12">
       {yearlyPricing.map((pricing) => (
         <PackageCard
           activePlan={"yearly"}

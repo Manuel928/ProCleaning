@@ -1,28 +1,43 @@
 import Button from "./Button";
 import { ArrowUpRightIcon } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 const ServicesCard = ({ service }) => {
   return (
-    <div className="flex flex-col hover:-translate-y-0.5 duration-300 transition-all h-full gap-4 items-start justify-center">
-      <div>
-        <img src={service.image} alt="" className="" srcset="" />
-      </div>
-      <div className="pb-2">
-        <h4 className="font-semibold text-[16px]">{service.title}</h4>
-        <p className="text-[#666666] text-[14px]">{service.description}</p>
-      </div>
-      <Button
-        bg="outline"
-        hover="green"
-        border="gray"
-        buttonTextColor="darkGreen"
-        font="regular"
-        size="md"
-      >
-        Book now
-        <ArrowUpRightIcon className="" />
-      </Button>
-    </div>
+    <Card className="w-[370px] gap-16 pb-[30px] shadow-md rounded-2xl">
+      <CardContent className="flex flex-col items-start gap-4 h-full">
+        <div className="w-full">
+          <img
+            src={service.image}
+            alt={service.title}
+            className=" h-[262px] object-cover rounded-[30px]"
+          />
+        </div>
+
+        <div className="flex flex-col gap-[24px]">
+          <h4 className="font-semibold text-[18px] leading-snug">
+            {service.title}
+          </h4>
+          <p className="text-[#666666] text-[14px] leading-relaxed">
+            {service.description}
+          </p>
+          <div className="w-[155px]">
+            <Button
+              bg="outline"
+              hover="green"
+              border="gray"
+              buttonTextColor="darkGreen"
+              font="regular"
+              size="md"
+              className="flex items-center gap-2 mt-auto"
+            >
+              Book now
+              <ArrowUpRightIcon className="w-4 h-4" />
+            </Button>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
   );
 };
 

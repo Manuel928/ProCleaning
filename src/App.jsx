@@ -8,6 +8,7 @@ import CallToAction from "./components/CallToAction";
 import Pricing from "./components/Pricing";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   const [activePlan, setActivePlan] = useState("monthly");
@@ -25,6 +26,7 @@ function App() {
       <Teams />
       <CallToAction />
       <Pricing activePlan={activePlan} setPlan={setPlan} />
+      <Testimonials/>
       <Blog/>
       <Contact/>
       <Footer />
