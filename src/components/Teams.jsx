@@ -24,7 +24,7 @@ const Teams = () => {
       <hr className="text-[#83A790]" />
 
       {/* Teams Cards */}
-      <div className="grid mx-auto max-w-[1170px] items-center gap-x-7.5 gap-y-8 md:grid-cols-2 xl:grid-cols-3">
+      <div className="flex flex-col md:flex-row mx-auto max-w-[1170px] gap-x-[30px] gap-y-8">
         {teams.map((member) => (
           <TeamsCard member={member} key={member.name} />
         ))}

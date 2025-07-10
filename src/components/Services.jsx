@@ -26,13 +26,13 @@ const Services = () => {
       <hr className="text-[#83A790]" />
 
       {/* Services Cards */}
-      <div className="relative grid mx-auto max-w-[1170px] items-center gap-x-7.5 gap-y-8 md:grid-cols-2 xl:grid-cols-3">
+      <div className="relative flex flex-col md:flex-row mx-auto max-w-[1170px] gap-x-[30px] gap-y-8">
         {services.map((service) => (
           <ServicesCard service={service} key={service.title} />
         ))}
         <a
           href=""
-          className="absolute top-25 left-[1010px] bottom-[300px] flex h-9 w-9 items-center justify-center rounded-full bg-[#36B864]"
+          className="absolute top-25 flex h-9 w-9 items-center justify-center rounded-full bg-[#36B864]"
         >
           <ArrowRight className="h-6 w-6 text-white" />
         </a>

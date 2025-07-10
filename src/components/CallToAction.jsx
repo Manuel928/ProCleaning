@@ -6,7 +6,7 @@ import BulletPoints from "./BulletPoints";
 const CallToAction = () => {
   return (
     <div className="pt-[60px] pb-[60px] md:pt-[110px] flex flex-col items-center gap-2.5 md:gap-5 mx-auto px-6 md:px-12 xl:px-[135px]">
-      <div className="pt-[25px] md:pt-[75px] flex flex-col lg:flex-row gap-[70px] lg:gap-[201px] overflow-visible">
+      <div className="pt-[25px] md:pt-[75px] flex flex-col items-center lg:flex-row gap-[70px] lg:gap-[201px] overflow-visible">
         {/* Image Container */}
         <div className="relative max-w-[535px] overflow-visible">
           <div className="relative w-[378px] h-[379px] overflow-visible">
@@ -16,13 +16,13 @@ const CallToAction = () => {
               alt=""
             />
             <img
-              className="w-[230.76px] h-[265px] absolute -bottom-10 left-[304.24px] z-50"
+              className="w-[230.76px] h-[265px] absolute -bottom-10 left-[200px] lg:left-[230px] z-50"
               src={assets.Image7}
               alt=""
             />
           </div>
         </div>
-        <div className="max-w-[525px] flex flex-col space-y-2 md:space-y-4">
+        <div className="max-w-[525px] px-6 md:px-12 flex flex-col space-y-2 md:space-y-4">
           <h1 className="font-semibold text-[18px] leading-[124%] text-left md:text-[24px] lg:text-[24px] text-[#111D15]">
             Welcome To Our <br /> Pro-cleaning Company!
           </h1>
@@ -33,7 +33,7 @@ const CallToAction = () => {
           </p>
           <BulletPoints />
 
-          <div className="flex flex-row pt-[40px] items-center gap-3 md:gap-6">
+          <div className="flex flex-row pt-[25px] lg:pt-[40px] items-center gap-3 md:gap-6">
             <Button bg="green" border="green" buttonTextColor="white" size="md">
               Book Now
             </Button>

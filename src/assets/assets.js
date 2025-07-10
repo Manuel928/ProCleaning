@@ -10,6 +10,9 @@ import Image7 from "../assets/Image7.webp";
 import Team1 from "../assets/Team1.webp";
 import Team2 from "../assets/Team2.webp";
 import Team3 from "../assets/Team3.webp";
+import Blog1 from "../assets/Blog1.webp";
+import Blog2 from "../assets/Blog2.webp";
+import Blog3 from "../assets/Blog3.webp";
 import X from "../assets/X.svg";
 import Facebook from "../assets/Facebook.svg";
 import Instagram from "../assets/Instagram.svg";
@@ -28,6 +31,9 @@ export const assets = {
   Team1,
   Team2,
   Team3,
+  Blog1,
+  Blog2,
+  Blog3,
   X,
   Facebook,
   Instagram,
@@ -144,7 +150,7 @@ export const monthlyPricing = [
 export const yearlyPricing = [
   {
     title: "BASIC PACKAGE",
-    amount: "70.00",
+    amount: "649.00",
     packageDetails: [
       "Dusting of all surfaces",
       "Sweeping and mopping floors",
@@ -157,7 +163,7 @@ export const yearlyPricing = [
 
   {
     title: "ENTERPRISE PACKAGE",
-    amount: "89.00",
+    amount: "749.00",
     packageDetails: [
       "All services in the Basic Plan",
       "Detailed dusting",
@@ -170,7 +176,7 @@ export const yearlyPricing = [
 
   {
     title: "PREMIUM PACKAGE",
-    amount: "120.00",
+    amount: "1,049.00",
     packageDetails: [
       "All services in the enterprise plan",
       "Deep cleaning of kitchen appt",
@@ -179,5 +185,32 @@ export const yearlyPricing = [
       "Carpet, upholstery spot cleaning",
       "Detailed bathroom cleaning",
     ],
+  },
+];
+
+export const blogPosts = [
+  {
+    image: Blog1,
+    author: "JOHN HELTON",
+    publishedDate: "JAN 6, 2025",
+    title: "Eco-Friendly Cleaning: How We Keep Your Home Green",
+    description:
+      "Learn about our commitment to eco-friendly practices. We share the eco-conscious products...",
+  },
+  {
+    image: Blog2,
+    author: "JOHN HELTON",
+    publishedDate: "JAN 6, 2025",
+    title: "How to Maintain a Clean Home Between Professional Visits",
+    description:
+      "Get practical advice on maintaining cleanliness between our scheduled visits. These easy-to-follow tips...",
+  },
+  {
+    image: Blog3,
+    author: "JOHN HELTON",
+    publishedDate: "JAN 6, 2025",
+    title: "The Benefits of Regular Professional Cleaning",
+    description:
+      "Understand the numerous advantages of scheduling regular professional cleanings. From improving indoor air...",
   },
 ];

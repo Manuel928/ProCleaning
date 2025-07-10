@@ -6,13 +6,16 @@ import Footer from "./components/Footer";
 import Teams from "./components/Teams";
 import CallToAction from "./components/CallToAction";
 import Pricing from "./components/Pricing";
+import Blog from "./components/Blog";
+import Contact from "./components/Contact";
 
 function App() {
   const [activePlan, setActivePlan] = useState("monthly");
 
-  function togglePlan() {
-    setActivePlan((prev) => (prev === "monthly" ? "yearly" : "monthly"));
-  }
+  function setPlan(plan) {
+  setActivePlan(plan);
+}
+
 
   return (
     <div>
@@ -21,7 +24,9 @@ function App() {
       <Services />
       <Teams />
       <CallToAction />
-      <Pricing activePlan={activePlan} togglePlan={togglePlan} />
+      <Pricing activePlan={activePlan} setPlan={setPlan} />
+      <Blog/>
+      <Contact/>
       <Footer />
     </div>
   );
