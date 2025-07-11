@@ -1,13 +1,21 @@
+import { motion } from "motion/react";
 import { blogPosts } from "../assets/assets";
 import BlogCard from "./BlogCard";
 
 const Blog = () => {
   return (
-    <div
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: 100,
+      }}
+      transition={{ duration: 1.5 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
       id="blog"
-      className="pt-[60px] md:pt-[110px] flex flex-col gap-2.5 md:gap-5 mx-auto px-6 md:px-12 xl:px-[135px]"
+      className="pt-[60px] flex flex-col gap-2.5 md:gap-5 mx-auto px-6 md:px-12 xl:px-[135px]"
     >
-      <div className="flex flex-col md:flex-row max-w-[1170px] justify-between gap-3 md:gap-[201px] items-start md:items-center">
+      <div className="flex flex-col pt-[75px] md:flex-row max-w-[1170px] justify-between gap-3 md:gap-[201px] items-start md:items-center">
         <h1 className="font-semibold text-[18px] leading-[124%] text-left max-w-[360px] md:text-[24px] lg:text-[24px] text-[#111D15]">
           Stay Updated with Our Tips & Service News!
         </h1>
@@ -27,7 +35,7 @@ const Blog = () => {
           <BlogCard post={post} key={post.title} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

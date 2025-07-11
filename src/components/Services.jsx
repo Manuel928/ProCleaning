@@ -1,5 +1,6 @@
 import { assets, services } from "../assets/assets";
 import Button from "./Button";
+import { motion } from "motion/react";
 import ServicesCard from "./ServicesCard";
 import {
   Carousel,
@@ -11,7 +12,14 @@ import {
 
 const Services = () => {
   return (
-    <div
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: 100,
+      }}
+      transition={{ duration: 1.5 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false }}
       id="service"
       className="pt-[60px] md:pt-[110px] flex flex-col gap-2.5 md:gap-5 mx-auto px-6 md:px-12 xl:px-[135px]"
     >
@@ -24,7 +32,7 @@ const Services = () => {
           <h4 className="hidden md:flex font-semibold text-[14px] max-w-[536px] md:text-[16px] text-[#111D15]">
             Services
           </h4>
-          <p className="text-[#666666] text-[14px] max-w-[400px]">
+          <p className="text-[#666666] text-justify text-[14px] max-w-[400px]">
             While we can customize your cleaning plan to suit your needs, most
             clients schedule regular cleaning services:
           </p>
@@ -45,8 +53,8 @@ const Services = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="bg-green text-white" />
-        <CarouselNext className="bg-green text-white" />
+        <CarouselPrevious className="bg-green hidden lg:flex text-white" />
+        <CarouselNext className="bg-green hidden lg:flex text-white" />
       </Carousel>
 
       {/* Affordable Prices Section */}
@@ -61,7 +69,7 @@ const Services = () => {
             </h1>
           </div>
           <div>
-            <p className="text-[#666666] max-w-[400px] text-[14px]">
+            <p className="text-[#666666] text-justify max-w-[400px] text-[14px]">
               We provide comprehensive cleaning services tailored to your needs.
               From residential cleaning services
             </p>
@@ -71,6 +79,7 @@ const Services = () => {
               bg="green"
               buttonTextColor="white"
               font="semibold"
+              border="green"
               size="md"
             >
               Get a quote
@@ -90,7 +99,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

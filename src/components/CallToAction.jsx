@@ -2,13 +2,23 @@ import React from "react";
 import Button from "./Button";
 import { assets } from "../assets/assets";
 import BulletPoints from "./BulletPoints";
+import { motion } from "motion/react";
 
 const CallToAction = () => {
   return (
-    <div id="cta" className="pt-[60px] pb-[60px] md:pt-[110px] flex flex-col items-center gap-2.5 md:gap-5 mx-auto px-6 md:px-12 xl:px-[135px]">
-      <div className="pt-[25px] md:pt-[75px] flex flex-col items-center lg:flex-row gap-[70px] lg:gap-[110px] overflow-visible">
+    <div
+      id="cta"
+      className="pt-[60px] pb-[60px] md:pt-[110px] flex flex-col items-center gap-2.5 md:gap-5 mx-auto px-6 md:px-12 xl:px-[135px]"
+    >
+      <div className="pt-[25px] md:pt-[75px] flex flex-col items-center max-w-[1440px] lg:flex-row gap-[70px] lg:gap-[110px] overflow-visible">
         {/* Image Container */}
-        <div className="relative max-w-[535px] overflow-visible">
+        <motion.div
+          initial={{ opacity: 0, x: -10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: false }}
+          className="relative max-w-[535px] overflow-visible"
+        >
           <div className="relative w-[378px] h-[379px] overflow-visible">
             <img
               className="w-[365.63px] h-[394px]"
@@ -16,13 +26,20 @@ const CallToAction = () => {
               alt=""
             />
             <img
-              className="w-[230.76px] h-[265px] absolute -bottom-10 left-[200px] lg:left-[230px] z-50"
+              className="w-[230.76px] h-[265px] absolute -bottom-10 left-[150px] lg:left-[230px] z-500"
               src={assets.Image7}
               alt=""
             />
           </div>
-        </div>
-        <div className="max-w-[525px] px-6 md:px-12 flex flex-col space-y-2 md:space-y-4">
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: false }}
+          className="max-w-[525px] px-6 md:px-12 flex flex-col space-y-2 md:space-y-4"
+        >
           <h1 className="font-semibold text-[18px] leading-[124%] text-left md:text-[24px] lg:text-[24px] text-[#111D15]">
             Welcome To Our <br /> Pro-cleaning Company!
           </h1>
@@ -46,7 +63,7 @@ const CallToAction = () => {
               Know More
             </Button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

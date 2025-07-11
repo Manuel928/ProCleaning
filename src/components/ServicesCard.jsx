@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const ServicesCard = ({ service }) => {
   return (
-    <Card className="w-[370px] gap-16 pb-[30px] shadow-md rounded-2xl">
+    <Card className="w-[370px] py-0 gap-16 pb-[30px] rounded-2xl">
       <CardContent className="flex flex-col items-start gap-4 h-full">
         <div className="w-full">
           <img

@@ -1,8 +1,8 @@
 import Button from "./Button";
-
+import { motion } from "motion/react";
 const Hero = () => {
   return (
-    <div
+    <motion.div
       className="min-h-[292.5px] md:min-h-[585px] mx-auto px-6 md:px-12 xl:px-[135px]"
       style={{
         backgroundImage: 'url("HeroImage.png")',
@@ -10,7 +10,16 @@ const Hero = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="flex flex-col gap-5 justify-center py-[70px] md:py-[104px] items-start max-w-[610px]">
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 100,
+        }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="flex flex-col gap-5 justify-center py-[70px] md:py-[104px] items-start max-w-[610px]"
+      >
         <div className="flex flex-col">
           <p className="text-[14px] md:text-[16px] text-[#111D15]">
             Quality cleaning at a fair price
@@ -29,15 +38,15 @@ const Hero = () => {
           </Button>
           <Button
             bg="outline"
-            border="darkGreen"
+            border="gray"
             buttonTextColor="darkGreen"
             size="md"
           >
             View all services
           </Button>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

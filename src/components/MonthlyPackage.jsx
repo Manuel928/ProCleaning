@@ -1,8 +1,9 @@
 import { monthlyPricing } from "../assets/assets";
 import PackageCard from "./PackageCard";
+
 const MonthlyPackage = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-x-[30px] gap-y-[36px] mx-auto px-6 md:px-12">
+    <div className="flex flex-col lg:flex-row gap-x-[30px] gap-y-[36px]">
       {monthlyPricing.map((pricing) => (
         <PackageCard
           activePlan={"monthly"}

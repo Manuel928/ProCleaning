@@ -52,18 +52,6 @@ export const services = [
       "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:",
   },
   {
-    image: Image1,
-    title: "Church Cleaning",
-    description:
-      "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:",
-  },
-  {
-    image: Image3,
-    title: "Yard Cleaning",
-    description:
-      "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:",
-  },
-  {
     image: Image3,
     title: "Spring Cleaning",
     description:

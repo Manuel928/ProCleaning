@@ -4,8 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const TestimonialCard = ({ testimonial }) => {
   return (
-    <Card className="py-0 mx-auto rounded-4xl">
-      <CardContent className="flex flex-col lg:w-[600px] lg:h-[284px] md:flex-row items-start lg:items-center gap-6 p-6 bg-white border-[2px] border-green rounded-[20px] shadow-sm">
+    <Card className="py-0 mx-auto w-full h-full lg:w-[600px] lg:h-[284px] border-t-4 border-r-4 border-l-0 border-b-0 lg:border-t-6 lg:border-r-6 lg:border-l-0 lg:border-b-0 border-green rounded-[20px]">
+      <CardContent className="flex flex-col h-full md:flex-row items-start lg:items-center gap-6 p-6 rounded-[20px] bg-white shadow-sm">
         <img
           src={testimonial.image}
           alt={testimonial.name}
@@ -31,7 +31,7 @@ const TestimonialCard = ({ testimonial }) => {
             ))}
           </div>
 
-          <p className="text-sm text-[#444] max-w-[366px] leading-relaxed">
+          <p className="text-sm text-justify text-[#444] max-w-[366px] leading-relaxed">
             {testimonial.testimonialText}
           </p>
         </div>

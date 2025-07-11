@@ -11,10 +11,10 @@ const Contact = () => {
             Find us
           </h3>
 
-          <div className="bg-lighterGray py-[10px] px-[20px] rounded-[12px] flex items-center gap-[12px]">
+          <div className="bg-lighterGray py-[7px] px-[18px] lg:py-[10px] lg:px-[20px] rounded-[12px] flex items-center gap-[12px]">
             <a
               href=""
-              className="flex p-2 h-9 w-9 items-center justify-center rounded-full bg-[#36B864]"
+              className="flex p-2 h-7 w-7 lg:h-9 lg:w-9 items-center justify-center rounded-full bg-[#36B864]"
             >
               <PhoneCallIcon className="h-6 w-6 text-white" />
             </a>
@@ -24,10 +24,10 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-lighterGray py-[10px] px-[20px] rounded-[10px] flex items-center gap-[16px]">
+          <div className="bg-lighterGray py-[7px] px-[18px] lg:py-[10px] lg:px-[20px] rounded-[10px] flex items-center gap-[16px]">
             <a
               href=""
-              className="flex p-2 h-9 w-9 items-center justify-center rounded-full bg-[#36B864]"
+              className="flex p-2 h-7 w-7 lg:h-9 lg:w-9 items-center justify-center rounded-full bg-[#36B864]"
             >
               <Mail className="h-6 w-6 text-white" />
             </a>
@@ -37,10 +37,10 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-lighterGray py-[10px] px-[20px] rounded-[10px] flex items-center gap-[16px]">
+          <div className="bg-lighterGray py-[7px] px-[18px] lg:py-[10px] lg:px-[20px] rounded-[10px] flex items-center gap-[16px]">
             <a
               href=""
-              className="flex p-2 h-9 w-9 items-center justify-center rounded-full bg-[#36B864]"
+              className="flex p-2 h-7 w-7 lg:h-9 lg:w-9 items-center justify-center rounded-full bg-[#36B864]"
             >
               <Navigation className="h-6 w-6 text-white" />
             </a>

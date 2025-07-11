@@ -1,14 +1,27 @@
+import { motion } from "motion/react";
+
 const PackageCard = ({ activePlan, pricing }) => {
   return (
-    <div className="bg-white w-full shadow-lg h-full flex flex-col items-center justify-between rounded-[20px] gap-[36px] px-[35px] py-[30px]">
-      <div className="px-[10px]">
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: 100,
+      }}
+      transition={{ duration: 1.5 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false }}
+      className="bg-white w-full lg:w-[370px] shadow-lg h-full flex flex-col items-center justify-between rounded-[20px] gap-[36px] px-[35px] py-[30px]"
+    >
+      <div className="">
         <p className="text-darkGreen text-center pb-[24px] text-[16px] font-medium">
           {pricing.title}
         </p>
         <div className="bg-green text-white mb-[36px] flex items-center justify-center w-full h-[60px] lg:w-[280px] lg:h-[78px] px-[40px] py-[20px] rounded-[10px]">
           <sub className="font-normal">$</sub>
           <p className="text-[24px] font-bold">{pricing.amount}/</p>
-          <sub className="font-normal">{activePlan == "monthly" ? "monthly" : "yearly"}</sub>
+          <sub className="font-normal">
+            {activePlan == "monthly" ? "monthly" : "yearly"}
+          </sub>
         </div>
         <ul className="flex list-disc list-inside flex-col items-start gap-3 text-sm text-darkGray">
           {pricing.packageDetails.map((detail) => (
@@ -23,7 +36,7 @@ const PackageCard = ({ activePlan, pricing }) => {
       >
         Book Now
       </a>
-    </div>
+    </motion.div>
   );
 };
 

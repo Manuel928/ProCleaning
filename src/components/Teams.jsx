@@ -1,9 +1,17 @@
 import { teams } from "../assets/assets";
 import TeamsCard from "./TeamsCard";
+import { motion } from "motion/react";
 
 const Teams = () => {
   return (
-    <div
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: 100,
+      }}
+      transition={{ duration: 1.5 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false }}
       id="service"
       className="pt-[60px] md:pt-[110px] flex flex-col gap-2.5 md:gap-5 mx-auto px-6 md:px-12 xl:px-[135px]"
     >
@@ -29,7 +37,7 @@ const Teams = () => {
           <TeamsCard member={member} key={member.name} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
